@@ -17,5 +17,6 @@ app.use(express.json());
 app.use(logger("dev"));
 
 app.use("/users", require("./routes/users.routes"));
+app.use("/posts", require("./routes/posts.routes"));
 
 module.exports = app;
